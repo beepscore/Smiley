@@ -57,7 +57,7 @@
     const CGAffineTransform *m = NULL;
     CGPoint faceCenter;
     faceCenter.x = 160.0f;
-    faceCenter.y = 300.0f;
+    faceCenter.y = 280.0f;
     const CGFloat faceRadius = 120.0f;
     const CGFloat startAngle = 0.0f;
     const CGFloat endAngle = 2.0f * M_PI;
