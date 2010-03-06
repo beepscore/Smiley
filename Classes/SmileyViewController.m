@@ -83,12 +83,16 @@
 #pragma mark animation
 - (IBAction)swingMood {
     [UIView beginAnimations:@"movement" context:nil];
-    self.frownView.center = CGPointMake(200.0f, 200.0f);    
-    self.smileyView.center = CGPointMake(440.0f, 200.0f);
+    // self.frownView.center = CGPointMake(200.0f, 200.0f);    
+    self.frownView.frame = CGRectMake(300.0f, 0.0f, 320.0f, 416.0f);
+    self.smileyView.frame = CGRectMake(300.0f, 0.0f, 320.0f, 416.0f);
     [UIView commitAnimations];
     
     // TODO:  need to redraw frown
-    //[self.frownView setNeedsDisplay];
+    [self.frownView setNeedsDisplay];
+    [self.view setNeedsDisplay];
+    //[self.frownView setNeedsDisplayInRect:self.frownView.bounds];
+    //[self.smileyView setNeedsDisplay];
 }
 
 @end
