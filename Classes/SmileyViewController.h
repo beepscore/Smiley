@@ -9,8 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface SmileyViewController : UIViewController {
-
+    UIView *smileyView;
+    UIView *frownView;
 }
+#pragma mark -
+#pragma mark properties
+@property(nonatomic,retain)IBOutlet UIView *smileyView;
+@property(nonatomic,retain)IBOutlet UIView *frownView;
+
+- (IBAction)swingMood;
 
 @end
 

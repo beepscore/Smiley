@@ -10,6 +10,9 @@
 
 @implementation SmileyViewController
 
+#pragma mark properties
+@synthesize smileyView;
+@synthesize frownView;
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -55,7 +58,8 @@
 // set properties to nil, which also releases them
 - (void)setView:(UIView *)newView {
     if (nil == newView) {
-        //self.webView = nil;
+        self.smileyView = nil;
+        self.frownView = nil;
     }    
     [super setView:newView];
 }
@@ -68,10 +72,23 @@
 
 
 - (void)dealloc {
+    [smileyView release], smileyView = nil;
+    [frownView release], frownView = nil;
+
     [super dealloc];
 }
 
 
 #pragma mark -
+#pragma mark animation
+- (IBAction)swingMood {
+    [UIView beginAnimations:@"movement" context:nil];
+    self.frownView.center = CGPointMake(200.0f, 200.0f);    
+    self.smileyView.center = CGPointMake(440.0f, 200.0f);
+    [UIView commitAnimations];
+    
+    // TODO:  need to redraw frown
+    //[self.frownView setNeedsDisplay];
+}
 
 @end
