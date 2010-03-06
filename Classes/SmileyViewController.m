@@ -31,12 +31,16 @@
  */
 
 
-/*
- // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
- - (void)viewDidLoad {
- [super viewDidLoad];
- }
- */
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    // Earlier versions of frownView drew it partially off the screen. 
+    // The clipped portion stayed clipped as the view was animated onto screen.
+    // Instead, in FrownView draw view centered on screen, then move it off here.
+    self.frownView.frame = CGRectMake(-320.0f, 0.0f, 320.0f, 416.0f);
+}
 
 
 /*
@@ -84,21 +88,17 @@
 - (IBAction)swingMood {
     [UIView beginAnimations:@"movement" context:nil];
     
-    if (self.frownView.frame.origin.x < 10.0f) {
+    if (self.frownView.frame.origin.x < -1.0f) {
         // self.frownView.center = CGPointMake(200.0f, 200.0f);    
-        self.frownView.frame = CGRectMake(300.0f, 0.0f, 320.0f, 416.0f);
-        self.smileyView.frame = CGRectMake(300.0f, 0.0f, 320.0f, 416.0f);
-    } else {
+        NSLog(@"show frown");
         self.frownView.frame = CGRectMake(0.0f, 0.0f, 320.0f, 416.0f);
+        self.smileyView.frame = CGRectMake(320.0f, 0.0f, 320.0f, 416.0f);
+    } else {
+        NSLog(@"show smile");
+        self.frownView.frame = CGRectMake(-320.0f, 0.0f, 320.0f, 416.0f);
         self.smileyView.frame = CGRectMake(0.0f, 0.0f, 320.0f, 416.0f);
     }
     [UIView commitAnimations];
-    
-    
-    // TODO:  frown was clipped when first drawn.  need to redraw frown
-    [self.frownView setNeedsDisplay];
-    //[self.frownView setNeedsDisplayInRect:self.frownView.bounds];
-
 }
 
 @end

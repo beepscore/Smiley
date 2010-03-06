@@ -81,7 +81,6 @@
 							<reference key="NSCustomColorSpace" ref="834368389"/>
 						</object>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-						<float key="IBUIAlpha">0.5</float>
 					</object>
 					<object class="IBUIButton" id="27609302">
 						<reference key="NSNextResponder" ref="774585933"/>
