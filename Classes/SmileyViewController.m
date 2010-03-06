@@ -11,7 +11,6 @@
 @implementation SmileyViewController
 
 
-
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -45,12 +44,22 @@
 }
 */
 
+#pragma mark Memory management methods
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
 	
 	// Release any cached data, images, etc that aren't in use.
 }
+
+// set properties to nil, which also releases them
+- (void)setView:(UIView *)newView {
+    if (nil == newView) {
+        //self.webView = nil;
+    }    
+    [super setView:newView];
+}
+
 
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
@@ -61,5 +70,8 @@
 - (void)dealloc {
     [super dealloc];
 }
+
+
+#pragma mark -
 
 @end
