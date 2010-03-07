@@ -88,15 +88,14 @@
 - (IBAction)swingMood {
     [UIView beginAnimations:@"movement" context:nil];
     
-    if (self.frownView.frame.origin.x < -1.0f) {
-        // self.frownView.center = CGPointMake(200.0f, 200.0f);    
+    if (self.frownView.center.x < -1.0f) {
         NSLog(@"show frown");
-        self.frownView.frame = CGRectMake(0.0f, 0.0f, 320.0f, 416.0f);
-        self.smileyView.frame = CGRectMake(320.0f, 0.0f, 320.0f, 416.0f);
+        self.frownView.center = CGPointMake(160.0f, 200.0f);
+        self.smileyView.center = CGPointMake(480.0f, 200.0f);
     } else {
         NSLog(@"show smile");
-        self.frownView.frame = CGRectMake(-320.0f, 0.0f, 320.0f, 416.0f);
-        self.smileyView.frame = CGRectMake(0.0f, 0.0f, 320.0f, 416.0f);
+        self.frownView.center = CGPointMake(-160.0f, 200.0f);
+        self.smileyView.center = CGPointMake(160.0f, 200.0f);
     }
     [UIView commitAnimations];
 }
