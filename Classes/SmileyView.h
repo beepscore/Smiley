@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FaceView.h"
+#import "FaceMaker.h"
 
 
-@interface SmileyView : UIView {
-
+@interface SmileyView : FaceView {
+    FaceMaker *faceMaker;
 }
+
+#pragma mark properties
+@property(nonatomic,retain)FaceMaker *faceMaker;
 
 @end

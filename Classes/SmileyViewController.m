@@ -39,7 +39,7 @@
     // Earlier versions of frownView drew it partially off the screen. 
     // The clipped portion stayed clipped as the view was animated onto screen.
     // Instead, in FrownView draw view centered on screen, then move it off here.
-    self.frownView.frame = CGRectMake(-320.0f, 0.0f, 320.0f, 416.0f);
+    self.frownView.frame = CGRectMake(480.0f, 0.0f, 320.0f, 416.0f);
 }
 
 
@@ -88,13 +88,13 @@
 - (IBAction)swingMood {
     [UIView beginAnimations:@"movement" context:nil];
     
-    if (self.frownView.center.x < -1.0f) {
+    if (self.frownView.center.x > 320.0f) {
         NSLog(@"show frown");
         self.frownView.center = CGPointMake(160.0f, 200.0f);
-        self.smileyView.center = CGPointMake(480.0f, 200.0f);
+        self.smileyView.center = CGPointMake(-160.0f, 200.0f);
     } else {
         NSLog(@"show smile");
-        self.frownView.center = CGPointMake(-160.0f, 200.0f);
+        self.frownView.center = CGPointMake(480.0f, 200.0f);
         self.smileyView.center = CGPointMake(160.0f, 200.0f);
     }
     [UIView commitAnimations];

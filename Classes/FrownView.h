@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FaceView.h"
 
 
-@interface FrownView : UIView {
+@interface FrownView : FaceView {
 
 }
 
