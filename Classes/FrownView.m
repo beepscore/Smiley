@@ -27,18 +27,18 @@
     faceCenter.x = 160.0f;
     faceCenter.y = 200.0f;
     
-    [self drawBlankFaceAtCenter:(CGPoint)faceCenter
+    [super drawBlankFaceAtCenter:(CGPoint)faceCenter
                       faceColor:[UIColor purpleColor]];
     
-    [self drawEyeAtCenter:CGPointMake(faceCenter.x - 30.0f, faceCenter.y - 30.0f)
+    [super drawEyeAtCenter:CGPointMake(faceCenter.x - 30.0f, faceCenter.y - 30.0f)
                 fillColor:[UIColor blueColor]
               strokeColor:[UIColor blackColor]];
     
-    [self drawEyeAtCenter:CGPointMake(faceCenter.x + 30.0f, faceCenter.y - 30.0f)
+    [super drawEyeAtCenter:CGPointMake(faceCenter.x + 30.0f, faceCenter.y - 30.0f)
                 fillColor:[UIColor blueColor]
               strokeColor:[UIColor blackColor]];    
     
-    [self drawFrown:faceCenter];
+    [super drawFrown:faceCenter];
 }
 
 
