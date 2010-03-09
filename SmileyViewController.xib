@@ -40,22 +40,6 @@
 				<int key="NSvFlags">274</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="IBUIToolbar" id="527269351">
-						<reference key="NSNextResponder" ref="774585933"/>
-						<int key="NSvFlags">266</int>
-						<string key="NSFrame">{{0, 416}, {320, 44}}</string>
-						<reference key="NSSuperview" ref="774585933"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-						<object class="NSMutableArray" key="IBUIItems">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIBarButtonItem" id="558408112">
-								<string key="IBUITitle">Swing Mood</string>
-								<int key="IBUIStyle">1</int>
-								<reference key="IBUIToolbar" ref="527269351"/>
-							</object>
-						</object>
-					</object>
 					<object class="IBUIView" id="90977951">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">288</int>
@@ -81,6 +65,22 @@
 							<reference key="NSCustomColorSpace" ref="834368389"/>
 						</object>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
+					</object>
+					<object class="IBUIToolbar" id="527269351">
+						<reference key="NSNextResponder" ref="774585933"/>
+						<int key="NSvFlags">266</int>
+						<string key="NSFrame">{{0, 416}, {320, 44}}</string>
+						<reference key="NSSuperview" ref="774585933"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
+						<object class="NSMutableArray" key="IBUIItems">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBUIBarButtonItem" id="558408112">
+								<string key="IBUITitle">Swing Mood</string>
+								<int key="IBUIStyle">1</int>
+								<reference key="IBUIToolbar" ref="527269351"/>
+							</object>
+						</object>
 					</object>
 				</object>
 				<string key="NSFrameSize">{320, 460}</string>
@@ -155,8 +155,8 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="527269351"/>
-							<reference ref="416596154"/>
 							<reference ref="90977951"/>
+							<reference ref="416596154"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
