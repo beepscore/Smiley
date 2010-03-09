@@ -17,7 +17,6 @@
 		28D7ACF80DDB3853001CB0EB /* SmileyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* SmileyViewController.m */; };
 		DE37839D1142184300397398 /* SmileyView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE37839C1142184300397398 /* SmileyView.m */; };
 		DE3783A21142186400397398 /* FrownView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3783A11142186400397398 /* FrownView.m */; };
-		DE37C01811437BD900276931 /* FaceMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DE37C01711437BD900276931 /* FaceMaker.m */; };
 		DEFA70EA1144C2E8001267E1 /* FaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFA70E91144C2E8001267E1 /* FaceView.m */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +38,6 @@
 		DE37839C1142184300397398 /* SmileyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmileyView.m; sourceTree = "<group>"; };
 		DE3783A01142186400397398 /* FrownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrownView.h; sourceTree = "<group>"; };
 		DE3783A11142186400397398 /* FrownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrownView.m; sourceTree = "<group>"; };
-		DE37C01611437BD900276931 /* FaceMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceMaker.h; sourceTree = "<group>"; };
-		DE37C01711437BD900276931 /* FaceMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceMaker.m; sourceTree = "<group>"; };
 		DEFA70E81144C2E8001267E1 /* FaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceView.h; sourceTree = "<group>"; };
 		DEFA70E91144C2E8001267E1 /* FaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,8 +67,6 @@
 				DE37839C1142184300397398 /* SmileyView.m */,
 				DE3783A01142186400397398 /* FrownView.h */,
 				DE3783A11142186400397398 /* FrownView.m */,
-				DE37C01611437BD900276931 /* FaceMaker.h */,
-				DE37C01711437BD900276931 /* FaceMaker.m */,
 				DEFA70E81144C2E8001267E1 /* FaceView.h */,
 				DEFA70E91144C2E8001267E1 /* FaceView.m */,
 			);
@@ -186,7 +181,6 @@
 				28D7ACF80DDB3853001CB0EB /* SmileyViewController.m in Sources */,
 				DE37839D1142184300397398 /* SmileyView.m in Sources */,
 				DE3783A21142186400397398 /* FrownView.m in Sources */,
-				DE37C01811437BD900276931 /* FaceMaker.m in Sources */,
 				DEFA70EA1144C2E8001267E1 /* FaceView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

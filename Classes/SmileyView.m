@@ -11,13 +11,11 @@
 
 @implementation SmileyView
 #pragma mark properties
-@synthesize faceMaker;
 
 
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         // Initialization code
-        faceMaker = [[FaceMaker alloc] init];
     }
     return self;
 }
@@ -41,26 +39,11 @@
               strokeColor:[UIColor blackColor]];    
     
     [super drawSmile:faceCenter];
-
-    // Use helper class FaceMaker
-    // didn't work
-    //[self.faceMaker drawFaceWithColor:[UIColor yellowColor]];
-    
-    // didn't work
-    //[self.faceMaker drawFaceWithView:self faceColor:[UIColor yellowColor]];
-
-    // didn't work
-    // create and build the path
-//    CGMutablePathRef path = CGPathCreateMutable();
-//    CGContextRef ctx = UIGraphicsGetCurrentContext();
-//    [self.faceMaker drawFaceWithPathRef:path contextRef:ctx faceColor:[UIColor yellowColor]];
-//    CGPathRelease(path);
-
 }
 
 
 - (void)dealloc {
-    [faceMaker release], faceMaker = nil;
+
     [super dealloc];
 }
 
