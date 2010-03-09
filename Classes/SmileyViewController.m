@@ -13,6 +13,7 @@
 #pragma mark properties
 @synthesize smileyView;
 @synthesize frownView;
+@synthesize wantSmileyView;
 
 /*
  // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -35,21 +36,27 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Earlier versions of frownView drew it partially off the screen. 
-    // The clipped portion stayed clipped as the view was animated onto screen.
-    // Instead, in FrownView draw view centered on screen, then move it off here.
-    self.frownView.frame = CGRectMake(480.0f, 0.0f, 320.0f, 416.0f);
+    self.wantSmileyView = YES;
+    [self showSmileyView:wantSmileyView];
 }
 
 
-/*
- // Override to allow orientations other than the default portrait orientation.
- - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
- // Return YES for supported orientations
- return (interfaceOrientation == UIInterfaceOrientationPortrait);
- }
- */
+
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait
+            || interfaceOrientation == UIInterfaceOrientationLandscapeLeft
+            || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+}
+
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    [UIView beginAnimations:@"movement" context:nil];    
+    [self showSmileyView:wantSmileyView];
+    [UIView commitAnimations];
+}
+
 
 #pragma mark Memory management methods
 - (void)didReceiveMemoryWarning {
@@ -85,18 +92,28 @@
 
 #pragma mark -
 #pragma mark animation
-- (IBAction)swingMood {
-    [UIView beginAnimations:@"movement" context:nil];
+- (void)showSmileyView:(BOOL)wantSmiley {
     
-    if (self.frownView.center.x > 320.0f) {
+    if (! wantSmiley) {
         NSLog(@"show frown");
-        self.frownView.center = CGPointMake(160.0f, 200.0f);
-        self.smileyView.center = CGPointMake(-160.0f, 200.0f);
+        self.frownView.center = CGPointMake(0.5f * self.view.bounds.size.width, 
+                                            0.42f * self.view.bounds.size.height);
+        self.smileyView.center = CGPointMake(-1.5f * self.view.bounds.size.width, 
+                                             0.42f * self.view.bounds.size.height);
     } else {
         NSLog(@"show smile");
-        self.frownView.center = CGPointMake(480.0f, 200.0f);
-        self.smileyView.center = CGPointMake(160.0f, 200.0f);
+        self.frownView.center = CGPointMake(1.5f * self.view.bounds.size.width, 
+                                            0.42f * self.view.bounds.size.height);
+        self.smileyView.center = CGPointMake(0.5f * self.view.bounds.size.width, 
+                                             0.42f * self.view.bounds.size.height);
     }
+}
+
+
+- (IBAction)swingMood {
+    self.wantSmileyView = ! self.wantSmileyView;
+    [UIView beginAnimations:@"movement" context:nil];    
+    [self showSmileyView:wantSmileyView];
     [UIView commitAnimations];
 }
 

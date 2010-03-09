@@ -24,8 +24,8 @@
     // Drawing code    
 
     CGPoint faceCenter;
-    faceCenter.x = 160.0f;
-    faceCenter.y = 200.0f;
+    faceCenter.x = self.bounds.size.width / 2.0f;
+    faceCenter.y = self.bounds.size.height / 2.0f;
     
     [super drawBlankFaceAtCenter:(CGPoint)faceCenter
                       faceColor:[UIColor purpleColor]];
