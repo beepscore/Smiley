@@ -80,7 +80,8 @@
 
 
 - (void)dealloc {
-    
+    [smileyView release], smileyView = nil;
+    [frownView release], frownView = nil;
     [super dealloc];
 }
 
