@@ -15,6 +15,7 @@
 		2899E5220DE3E06400AC0155 /* SmileyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* SmileyViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* SmileyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* SmileyViewController.m */; };
+		DE1DD68A11E5482A0026C0C7 /* beepscoreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE1DD68911E5482A0026C0C7 /* beepscoreIcon.png */; };
 		DE37839D1142184300397398 /* SmileyView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE37839C1142184300397398 /* SmileyView.m */; };
 		DE3783A21142186400397398 /* FrownView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3783A11142186400397398 /* FrownView.m */; };
 		DEFA70EA1144C2E8001267E1 /* FaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFA70E91144C2E8001267E1 /* FaceView.m */; };
@@ -34,6 +35,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Smiley_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Smiley_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Smiley-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Smiley-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		DE1DD68911E5482A0026C0C7 /* beepscoreIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beepscoreIcon.png; sourceTree = "<group>"; };
 		DE37839B1142184300397398 /* SmileyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmileyView.h; sourceTree = "<group>"; };
 		DE37839C1142184300397398 /* SmileyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmileyView.m; sourceTree = "<group>"; };
 		DE3783A01142186400397398 /* FrownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrownView.h; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DE1DD68911E5482A0026C0C7 /* beepscoreIcon.png */,
 				2899E5210DE3E06400AC0155 /* SmileyViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Smiley-Info.plist */,
@@ -166,6 +169,7 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* SmileyViewController.xib in Resources */,
+				DE1DD68A11E5482A0026C0C7 /* beepscoreIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +227,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.3;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Debug;
 		};
@@ -236,7 +240,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.3;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Release;
 		};
