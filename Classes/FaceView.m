@@ -20,12 +20,8 @@
 }
 
 
-#pragma mark -
-#pragma mark Memory management methods
+#pragma mark - Drawing methods
 
-
-#pragma mark -
-#pragma mark Drawing methods
 - (void)drawRect:(CGRect)rect {
     // Drawing code
 }

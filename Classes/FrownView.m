@@ -41,6 +41,4 @@
     [super drawFrown:faceCenter];
 }
 
-
-
 @end

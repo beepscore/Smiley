@@ -10,7 +10,6 @@
 
 
 @implementation SmileyView
-#pragma mark properties
 
 
 - (id)initWithFrame:(CGRect)frame {

@@ -13,6 +13,5 @@
 @interface SmileyView : FaceView {
 }
 
-#pragma mark properties
 
 @end
