@@ -36,12 +36,6 @@
 }
 
 
-- (void)dealloc {
-    self.smileyView = nil;
-    self.frownView = nil;
-}
-
-
 #pragma mark - animation
 - (void)showSmileyView:(BOOL)wantSmiley {
     
