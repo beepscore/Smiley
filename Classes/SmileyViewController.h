@@ -11,13 +11,5 @@
 @interface SmileyViewController : UIViewController {
 }
 
-#pragma mark properties
-@property(nonatomic,strong)IBOutlet UIView *smileyView;
-@property(nonatomic,strong)IBOutlet UIView *frownView;
-@property(nonatomic, assign)BOOL wantSmileyView;
-
-- (void)showSmileyView:(BOOL)wantSmiley;
-- (IBAction)swingMood;
-
 @end
 

@@ -8,6 +8,15 @@
 
 #import "SmileyViewController.h"
 
+@interface SmileyViewController ()
+@property(nonatomic,strong)IBOutlet UIView *smileyView;
+@property(nonatomic,strong)IBOutlet UIView *frownView;
+@property(nonatomic, assign)BOOL wantSmileyView;
+
+- (void)showSmileyView:(BOOL)wantSmiley;
+- (IBAction)swingMood;
+@end
+
 @implementation SmileyViewController
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
