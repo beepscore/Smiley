@@ -10,12 +10,12 @@
 
 
 @interface FaceView : UIView {
-
+    
 }
 
 - (void)drawCircleAtCenter:(CGPoint)circleCenter
                     radius:(CGFloat)circleRadius
-               strokeWidth:(CGFloat)strokeWidth 
+               strokeWidth:(CGFloat)strokeWidth
                  fillColor:(UIColor *)fillColor
                strokeColor:(UIColor *)strokeColor;
 
@@ -24,7 +24,7 @@
 
 - (void)drawEyeAtCenter:(CGPoint)eyeCenter
               fillColor:(UIColor *)irisColor
-            strokeColor:(UIColor *)strokeColor;    
+            strokeColor:(UIColor *)strokeColor;
 
 - (void)drawSmile:(CGPoint)faceCenter;
 

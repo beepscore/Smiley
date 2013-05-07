@@ -11,7 +11,7 @@
 
 
 @interface FrownView : FaceView {
-
+    
 }
 
 @end

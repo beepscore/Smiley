@@ -27,15 +27,15 @@
     faceCenter.y = self.bounds.size.height / 2.0f;
     
     [super drawBlankFaceAtCenter:(CGPoint)faceCenter
-                      faceColor:[UIColor yellowColor]];
+                       faceColor:[UIColor yellowColor]];
     
     [super drawEyeAtCenter:CGPointMake(faceCenter.x - 30.0f, faceCenter.y - 30.0f)
-                fillColor:[UIColor blueColor]
-              strokeColor:[UIColor blackColor]];
+                 fillColor:[UIColor blueColor]
+               strokeColor:[UIColor blackColor]];
     
     [super drawEyeAtCenter:CGPointMake(faceCenter.x + 30.0f, faceCenter.y - 30.0f)
-                fillColor:[UIColor blueColor]
-              strokeColor:[UIColor blackColor]];    
+                 fillColor:[UIColor blueColor]
+               strokeColor:[UIColor blackColor]];
     
     [super drawSmile:faceCenter];
 }

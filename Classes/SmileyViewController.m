@@ -41,15 +41,15 @@
     
     if (! wantSmiley) {
         NSLog(@"show frown");
-        self.frownView.center = CGPointMake(0.5f * self.view.bounds.size.width, 
+        self.frownView.center = CGPointMake(0.5f * self.view.bounds.size.width,
                                             0.42f * self.view.bounds.size.height);
-        self.smileyView.center = CGPointMake(-1.5f * self.view.bounds.size.width, 
+        self.smileyView.center = CGPointMake(-1.5f * self.view.bounds.size.width,
                                              0.42f * self.view.bounds.size.height);
     } else {
         NSLog(@"show smile");
-        self.frownView.center = CGPointMake(1.5f * self.view.bounds.size.width, 
+        self.frownView.center = CGPointMake(1.5f * self.view.bounds.size.width,
                                             0.42f * self.view.bounds.size.height);
-        self.smileyView.center = CGPointMake(0.5f * self.view.bounds.size.width, 
+        self.smileyView.center = CGPointMake(0.5f * self.view.bounds.size.width,
                                              0.42f * self.view.bounds.size.height);
     }
 }
@@ -57,7 +57,7 @@
 
 - (IBAction)swingMood {
     self.wantSmileyView = ! self.wantSmileyView;
-    [UIView beginAnimations:@"movement" context:nil];    
+    [UIView beginAnimations:@"movement" context:nil];
     [self showSmileyView:self.wantSmileyView];
     [UIView commitAnimations];
 }
