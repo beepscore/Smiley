@@ -10,55 +10,15 @@
 
 @implementation SmileyViewController
 
-#pragma mark properties
-@synthesize smileyView;
-@synthesize frownView;
-@synthesize wantSmileyView;
-
-/*
- // The designated initializer. Override to perform setup that is required before the view is loaded.
- - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
- if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
- // Custom initialization
- }
- return self;
- }
- */
-
-/*
- // Implement loadView to create a view hierarchy programmatically, without using a nib.
- - (void)loadView {
- }
- */
-
-
-
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.wantSmileyView = YES;
-    [self showSmileyView:wantSmileyView];
+    [self showSmileyView:self.wantSmileyView];
 }
 
 
-
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait
-            || interfaceOrientation == UIInterfaceOrientationLandscapeLeft
-            || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
-}
-
-
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-    [UIView beginAnimations:@"movement" context:nil];    
-    [self showSmileyView:wantSmileyView];
-    [UIView commitAnimations];
-}
-
-
-#pragma mark Memory management methods
+#pragma mark - Memory management methods
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -67,27 +27,13 @@
 }
 
 
-// Ref http://developer.apple.com/mac/library/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/mmNibObjects.html
-- (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-    // Release any retained outlets
-    // set properties to nil, which also releases them
+- (void)dealloc {
     self.smileyView = nil;
     self.frownView = nil;
-
-    [super viewDidUnload];
 }
 
 
-- (void)dealloc {
-    [smileyView release], smileyView = nil;
-    [frownView release], frownView = nil;
-    [super dealloc];
-}
-
-
-#pragma mark -
-#pragma mark animation
+#pragma mark - animation
 - (void)showSmileyView:(BOOL)wantSmiley {
     
     if (! wantSmiley) {
@@ -109,7 +55,7 @@
 - (IBAction)swingMood {
     self.wantSmileyView = ! self.wantSmileyView;
     [UIView beginAnimations:@"movement" context:nil];    
-    [self showSmileyView:wantSmileyView];
+    [self showSmileyView:self.wantSmileyView];
     [UIView commitAnimations];
 }
 

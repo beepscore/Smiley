@@ -10,12 +10,12 @@
 
 @class SmileyViewController;
 
-@interface SmileyAppDelegate : NSObject <UIApplicationDelegate> {
+@interface SmileyAppDelegate : UIResponder <UIApplicationDelegate> {
     // Xcode automatically adds instance variables to back properties
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet SmileyViewController *viewController;
+@property (nonatomic, strong) IBOutlet UIWindow *window;
+@property (nonatomic, strong) IBOutlet SmileyViewController *viewController;
 
 @end
 

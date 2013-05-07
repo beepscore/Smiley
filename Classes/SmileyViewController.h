@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface SmileyViewController : UIViewController {
-    // Xcode automatically adds instance variables to back properties
 }
+
 #pragma mark properties
-@property(nonatomic,retain)IBOutlet UIView *smileyView;
-@property(nonatomic,retain)IBOutlet UIView *frownView;
+@property(nonatomic,strong)IBOutlet UIView *smileyView;
+@property(nonatomic,strong)IBOutlet UIView *frownView;
 @property(nonatomic, assign)BOOL wantSmileyView;
 
 - (void)showSmileyView:(BOOL)wantSmiley;

@@ -12,13 +12,12 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		2899E5220DE3E06400AC0155 /* SmileyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* SmileyViewController.xib */; };
-		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* SmileyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* SmileyViewController.m */; };
 		DE1DD68A11E5482A0026C0C7 /* beepscoreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE1DD68911E5482A0026C0C7 /* beepscoreIcon.png */; };
 		DE37839D1142184300397398 /* SmileyView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE37839C1142184300397398 /* SmileyView.m */; };
 		DE3783A21142186400397398 /* FrownView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3783A11142186400397398 /* FrownView.m */; };
 		DEA276091738B35700A1F088 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA276081738B35700A1F088 /* Default-568h@2x.png */; };
+		DEE350671738BBBC007CB867 /* Main-iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE350661738BBBC007CB867 /* Main-iphone.storyboard */; };
 		DEFA70EA1144C2E8001267E1 /* FaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFA70E91144C2E8001267E1 /* FaceView.m */; };
 /* End PBXBuildFile section */
 
@@ -29,8 +28,6 @@
 		1D6058910D05DD3D006BFB54 /* Smiley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smiley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E5210DE3E06400AC0155 /* SmileyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmileyViewController.xib; sourceTree = "<group>"; };
-		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28D7ACF60DDB3853001CB0EB /* SmileyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmileyViewController.h; sourceTree = "<group>"; };
 		28D7ACF70DDB3853001CB0EB /* SmileyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmileyViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +39,7 @@
 		DE3783A01142186400397398 /* FrownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrownView.h; sourceTree = "<group>"; };
 		DE3783A11142186400397398 /* FrownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrownView.m; sourceTree = "<group>"; };
 		DEA276081738B35700A1F088 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DEE350661738BBBC007CB867 /* Main-iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iphone.storyboard"; sourceTree = "<group>"; };
 		DEFA70E81144C2E8001267E1 /* FaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceView.h; sourceTree = "<group>"; };
 		DEFA70E91144C2E8001267E1 /* FaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				DEA276081738B35700A1F088 /* Default-568h@2x.png */,
+				DEE350661738BBBC007CB867 /* Main-iphone.storyboard */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -111,8 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				DE1DD68911E5482A0026C0C7 /* beepscoreIcon.png */,
-				2899E5210DE3E06400AC0155 /* SmileyViewController.xib */,
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Smiley-Info.plist */,
 			);
 			name = Resources;
@@ -181,10 +178,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				2899E5220DE3E06400AC0155 /* SmileyViewController.xib in Resources */,
 				DE1DD68A11E5482A0026C0C7 /* beepscoreIcon.png in Resources */,
 				DEA276091738B35700A1F088 /* Default-568h@2x.png in Resources */,
+				DEE350671738BBBC007CB867 /* Main-iphone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +207,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -225,6 +222,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Smiley_Prefix.pch;

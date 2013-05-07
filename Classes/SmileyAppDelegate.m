@@ -11,23 +11,22 @@
 
 @implementation SmileyAppDelegate
 
-@synthesize window;
-@synthesize viewController;
+- (void)awakeFromNib
+{
+    // http://stackoverflow.com/questions/7520971/applications-are-expected-to-have-a-root-view-controller-at-the-end-of-applicati
+    self.window.rootViewController = self.viewController;
+}
 
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application {    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Override point for customization after app launch    
-    [window addSubview:viewController.view];
-    [window makeKeyAndVisible];
+    [self.window addSubview:self.viewController.view];
+    [self.window makeKeyAndVisible];
+    return YES;
 }
 
 
-- (void)dealloc {
-    [viewController release];
-    [window release];
-    [super dealloc];
-}
 
 
 @end

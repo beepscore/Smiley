@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O1V-hc-wAp">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Smiley View Controller-->
+        <scene sceneID="LFT-nb-xdT">
+            <objects>
+                <viewController id="O1V-hc-wAp" customClass="SmileyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ifp-C2-Zny">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0E1-UJ-8ZX" customClass="SmileyView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMw-eM-W68" customClass="FrownView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8Y-KG-Mas">
+                                <items>
+                                    <barButtonItem title="Swing Mood" id="DAv-jH-Ere">
+                                        <connections>
+                                            <action selector="swingMood" destination="O1V-hc-wAp" id="36Q-yG-DFn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JMw-eM-W68" firstAttribute="leading" secondItem="ifp-C2-Zny" secondAttribute="leading" type="default" id="4nw-fK-KgZ"/>
+                            <constraint firstItem="JMw-eM-W68" firstAttribute="top" secondItem="ifp-C2-Zny" secondAttribute="top" type="default" id="7Sd-kQ-hu7"/>
+                            <constraint firstItem="JMw-eM-W68" firstAttribute="trailing" secondItem="ifp-C2-Zny" secondAttribute="trailing" type="default" id="PNW-G8-t0r"/>
+                            <constraint firstItem="w8Y-KG-Mas" firstAttribute="trailing" secondItem="ifp-C2-Zny" secondAttribute="trailing" type="default" id="PUP-j4-yLQ"/>
+                            <constraint firstItem="w8Y-KG-Mas" firstAttribute="top" secondItem="JMw-eM-W68" secondAttribute="bottom" type="default" id="Xkd-do-L0z"/>
+                            <constraint firstItem="0E1-UJ-8ZX" firstAttribute="top" secondItem="ifp-C2-Zny" secondAttribute="top" type="default" id="XtH-dS-jYn"/>
+                            <constraint firstItem="0E1-UJ-8ZX" firstAttribute="trailing" secondItem="ifp-C2-Zny" secondAttribute="trailing" type="default" id="ZVy-Ic-cJu"/>
+                            <constraint firstItem="w8Y-KG-Mas" firstAttribute="top" secondItem="0E1-UJ-8ZX" secondAttribute="bottom" type="default" id="i9M-yd-IE0"/>
+                            <constraint firstItem="w8Y-KG-Mas" firstAttribute="leading" secondItem="ifp-C2-Zny" secondAttribute="leading" type="default" id="m1J-eY-BSa"/>
+                            <constraint firstItem="0E1-UJ-8ZX" firstAttribute="leading" secondItem="ifp-C2-Zny" secondAttribute="leading" type="default" id="ouQ-fu-Mmd"/>
+                            <constraint firstItem="w8Y-KG-Mas" firstAttribute="top" secondItem="ifp-C2-Zny" secondAttribute="top" constant="506" id="q6i-2F-bwG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="frownView" destination="JMw-eM-W68" id="vgP-AV-Bav"/>
+                        <outlet property="smileyView" destination="0E1-UJ-8ZX" id="FUF-Pg-oob"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ck8-X6-zNy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73" y="-23"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="FaceView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FaceView.h"/>
+        </class>
+        <class className="FrownView" superclassName="FaceView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FrownView.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SmileyView" superclassName="FaceView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SmileyView.h"/>
+        </class>
+        <class className="SmileyViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SmileyViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="swingMood"/>
+                <relationship kind="outlet" name="frownView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="smileyView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

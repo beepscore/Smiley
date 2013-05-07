@@ -23,9 +23,6 @@
 #pragma mark -
 #pragma mark Memory management methods
 
-- (void)dealloc {
-    [super dealloc];
-}
 
 #pragma mark -
 #pragma mark Drawing methods
