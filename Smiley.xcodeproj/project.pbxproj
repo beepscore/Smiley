@@ -18,6 +18,7 @@
 		DE1DD68A11E5482A0026C0C7 /* beepscoreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE1DD68911E5482A0026C0C7 /* beepscoreIcon.png */; };
 		DE37839D1142184300397398 /* SmileyView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE37839C1142184300397398 /* SmileyView.m */; };
 		DE3783A21142186400397398 /* FrownView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3783A11142186400397398 /* FrownView.m */; };
+		DEA276091738B35700A1F088 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA276081738B35700A1F088 /* Default-568h@2x.png */; };
 		DEFA70EA1144C2E8001267E1 /* FaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFA70E91144C2E8001267E1 /* FaceView.m */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		DE37839C1142184300397398 /* SmileyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmileyView.m; sourceTree = "<group>"; };
 		DE3783A01142186400397398 /* FrownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrownView.h; sourceTree = "<group>"; };
 		DE3783A11142186400397398 /* FrownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrownView.m; sourceTree = "<group>"; };
+		DEA276081738B35700A1F088 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DEFA70E81144C2E8001267E1 /* FaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceView.h; sourceTree = "<group>"; };
 		DEFA70E91144C2E8001267E1 /* FaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				DEA276081738B35700A1F088 /* Default-568h@2x.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -151,6 +154,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Beepscore LLC";
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Smiley" */;
@@ -180,6 +184,7 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* SmileyViewController.xib in Resources */,
 				DE1DD68A11E5482A0026C0C7 /* beepscoreIcon.png in Resources */,
+				DEA276091738B35700A1F088 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +241,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -249,7 +254,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
